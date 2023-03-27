@@ -27,21 +27,23 @@ export const SimpleForm = () => {
         <>
             <h1>SimpleForm</h1>
             <hr />
-            <input type='text'
+            <input
+                type='text'
                 name='username'
                 className='form-control'
                 placeholder='Username'
-                defaultValue={username}
-                onChange={e=>onInputChange(e)}
+                value={username}
+                onChange={e => onInputChange(e)}
             />
-             { (username === 'Kakaroto') && <Message />}
-            <input type='email'
+            {(username === 'Kakaroto') && <Message />}
+            <input
+                type='email'
                 name='email'
                 className='form-control mt-2'
                 placeholder='username@mail.com'
-                defaultValue={email}
+                value={email}
                 onChange={onInputChange}
-            />        
-       </>
+            />
+        </>
     )
 }
