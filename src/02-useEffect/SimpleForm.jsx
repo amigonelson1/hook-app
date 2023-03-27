@@ -4,7 +4,7 @@ import { Message } from './Message';
 export const SimpleForm = () => {
 
     const [formState, setFormState] = useState({
-        username: 'Kakaroto',
+        username: 'Kakarot',
         email: 'kakaroto@mail.com',
     });
 
