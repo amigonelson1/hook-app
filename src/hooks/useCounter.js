@@ -9,8 +9,8 @@ export const useCounter = (valorInicial = 10) => {
     }
 
     const decrementar = (valor = 1) => {
-        if (counter === 0) return;
-        setCounter(counter -valor)
+        if (counter === 1) return;
+        setCounter(counter - valor)
     }
 
     const restaurar = () => {
